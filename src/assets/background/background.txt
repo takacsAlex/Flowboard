@@ -1,3 +1,4 @@
 -Background is from: https://reactbits.dev/backgrounds/particles
 -Created by https://x.com/davidhdev
 
+-Run(in bash): npm install ogl
