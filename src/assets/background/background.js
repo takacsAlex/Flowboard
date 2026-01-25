@@ -87,10 +87,10 @@ const fragment = /* glsl */ `
 
 const Background = ({
   particleCount = 200,
-  particleSpread = 10,
-  speed = 0.1,
+  particleSpread = 20,
+  speed = 0.05,
   particleColors,
-  moveParticlesOnHover = false,
+  moveParticlesOnHover = true,
   particleHoverFactor = 1,
   alphaParticles = false,
   particleBaseSize = 100,
@@ -216,8 +216,9 @@ const Background = ({
     return () => {
       window.removeEventListener('resize', resize);
       if (moveParticlesOnHover) {
-        container.removeEventListener('mousemove', handleMouseMove);
+        window.addEventListener('mousemove', handleMouseMove);
       }
+
       cancelAnimationFrame(animationFrameId);
       if (container.contains(gl.canvas)) {
         container.removeChild(gl.canvas);
