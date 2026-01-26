@@ -1,21 +1,14 @@
-import Background from "./assets/background/background"
+import Background from "./assets/background/background";
+import HomePage from "./pages/home/home.tsx";
 
 function App() {
+
+  console.log("Server is running");
+
   return(
     <>
-      <div style={{ width: '99%', height: '99%', position: 'absolute'}}>
-      <Background
-          particleColors={["#eae7e7"]}
-          particleCount={200}
-          particleSpread={20}
-          speed={0.05}
-          particleBaseSize={100}
-          moveParticlesOnHover
-          alphaParticles={false}
-          disableRotation={false}
-          pixelRatio={1}
-      />
-      </div>
+      <Background />
+      <HomePage />
     </>
   );
 }
