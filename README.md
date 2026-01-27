@@ -1,12 +1,20 @@
-# Getting Started with Create React App
+# Flowboard
+Flowboard is a simple, visual taskboard web app built with react and designed to help you organize your work and stay focused. It’s built around the idea that managing tasks should feel natural, fast, and distraction free.
+Create boards, add tasks, and move them through your workflow as you make progress. Whether you’re planning a small personal project or tracking daily tasks, Flowboard keeps everything clear and easy to understand.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Get started:
 
-## Available Scripts
+Before running the code run in main repository:
+```bash
+npm install
+```
 
-In the project directory, you can run:
+To run code:
+```bash
+npm start
+```
 
-### `npm start`
+### the app will start running on [http://localhost:3000]
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
