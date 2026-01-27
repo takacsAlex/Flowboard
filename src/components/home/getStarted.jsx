@@ -4,11 +4,13 @@ const GetStarted = () => {
     return(
         <div className="get_started">
             <div className="container">
-                <div className="row gap-2">
-                    <div className="col-xl-12 col-lg-12 col-md-6 col-sm-6">
+                <div className="row">
+                    <div className="col">
                         <h1>Organize your tasks effortlessly and completely free with Flowboard!</h1>
                     </div>
-                    <div className="col-xl-12 col-lg-12 col-md-6 col-sm-6">
+                </div>
+                <div className="row">
+                    <div className="col">
                         <h2>
                             Flowboard helps you organize your tasks in a clear, visual way so you can focus on what actually matters. Create boards, move tasks forward, and keep your workflow simple and distraction free. Best of all, it’s completely free to get started with no setup and no hassle.
                         </h2>
