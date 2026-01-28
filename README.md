@@ -26,3 +26,7 @@ npm start
  the app will start running on http://localhost:3000
 
 ---
+## License:
+**Feel free to use:)**
+
+---
