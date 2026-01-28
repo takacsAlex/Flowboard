@@ -3,6 +3,15 @@ Flowboard is a simple, visual taskboard web app built with react and designed to
 Create boards, add tasks, and move them through your workflow as you make progress. Whether you’re planning a small personal project or tracking daily tasks, Flowboard keeps everything clear and easy to understand.
 
 ---
+## Features:
+
+* Visual taskboards with columns
+* Easy drag and drop task flow
+* Clean and minimal interface
+* No unnecessary complexity
+* Free to use
+
+---
 ## Get started:
 
 Before running the code open a bash in main repository:
