@@ -14,18 +14,18 @@ Create boards, add tasks, and move them through your workflow as you make progre
 ---
 ## Get started:
 
-1.Install node with the version: v25.2.1
+1. Install node with the version: v25.2.1
 
-2.Before running the code open a bash in main repository:
+2. Before running the code open a bash in main repository:
 ```bash
 npm install
 ```
-3.To run code:
+3. To run code:
 ```bash
 npm start
 ```
 
-4.The app will start running on http://localhost:3000
+4. The app will start running on http://localhost:3000
 
 ---
 ## License:
