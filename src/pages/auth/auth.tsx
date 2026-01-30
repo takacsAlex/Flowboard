@@ -5,7 +5,7 @@ import './auth.css';
 const AuthPage = () => {
     return(
         <>
-            <LoginForm />
+            <RegisterForm />
         </>
     );
 }

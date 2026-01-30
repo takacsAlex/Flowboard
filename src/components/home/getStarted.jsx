@@ -19,7 +19,7 @@ const GetStarted = () => {
                 <div className="container" id="get_started_bts">
                 <div className="row gap-4">
                     <div className="col-xl-4 col-xs-12">
-                    <button className="btn btn-outline-light" id="get_started_bt">Get started!</button>
+                    <a href="/signin"><button className="btn btn-outline-light" id="get_started_bt">Get started!</button></a>
                     </div>
                     <div className="col-xl-5 col-xs-12 offset-0">
                         <button className="btn btn-outline-secondary" id="read_more_bt">or read more about us</button>
