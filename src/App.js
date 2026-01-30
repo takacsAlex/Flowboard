@@ -1,6 +1,6 @@
 import Background from "./assets/background/background";
-import HomePage from "./pages/home/home.tsx";
-import AuthPage from "./pages/auth/auth.tsx";
+import Router from "./pages/router.jsx";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
 
@@ -9,7 +9,9 @@ function App() {
   return(
     <>
       <Background />
-      <HomePage />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
     </>
   );
 }
