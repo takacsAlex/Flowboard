@@ -1,0 +1,37 @@
+.register_form {
+    border: 1px solid rgb(47, 47, 47);
+    border-radius: 5px;
+    max-width: 80vh;
+    padding: 25px;
+}
+
+.row {
+    margin: 5px;
+    padding: 5px;
+}
+.form-label {
+    font-size: 16pt;
+    font-weight: 700;
+}
+
+#signup_heading {
+    text-align: center;
+    font-weight: 800;
+    font-size: 54pt;
+    margin-bottom: 10px;
+}
+#link_login {
+    text-align: right;
+    color: rgba(201, 199, 199, 0.809);
+    text-decoration: none;
+    font-style: italic;
+    padding-right: 30px;
+}
+#link_login:hover {
+    color: white;
+}
+#submit {
+    color: white;
+    font-size: 22pt;
+    font-weight: 700;
+}
