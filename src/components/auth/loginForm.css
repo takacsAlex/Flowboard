@@ -20,14 +20,14 @@
     font-size: 46pt;
     margin-bottom: 10px;
 }
-#link_login {
+#link_register {
     text-align: right;
     color: rgba(201, 199, 199, 0.809);
     text-decoration: none;
     font-style: italic;
     padding-right: 30px;
 }
-#link_login:hover {
+#link_register:hover {
     color: white;
 }
 #submit {

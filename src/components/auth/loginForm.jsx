@@ -25,7 +25,7 @@ const LoginForm = () => {
                                 </div>
                             </div>
                             <div className="row">
-                                <a href="#" id="link_login">Don't have an account?</a>
+                                <a href="#" id="link_register">Don't have an account?</a>
                             </div>
                             <div className="row">
                                 <input type="submit" value={"Log in"} className="btn btn-outline-dark" id="submit"/>
