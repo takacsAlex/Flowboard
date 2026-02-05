@@ -4,10 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 import { CookiesProvider } from "react-cookie";
 
 function App() {
-
-  console.log("Server is running!");
-  console.log(process.env.COOKIES_EXPERATION_TIME)
-
   return(
     <>
       <Background />
