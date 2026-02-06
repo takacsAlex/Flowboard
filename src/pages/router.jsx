@@ -1,6 +1,7 @@
 import HomePage from "./home/home.tsx";
 import RegisterPage from "./auth/registerPage.tsx";
 import Dashboard from "./dashboard/dashboard.tsx";
+import NotFoundPageWidget from "../components/shared/pageNotFound.jsx";
 import { Route, Routes } from "react-router-dom";
 import { useCookies } from "react-cookie";
 
@@ -17,6 +18,9 @@ const Router = () => {
             <Route path="/" element={cookies.user? <Dashboard /> : <HomePage />}/>
             <Route path="/signup" element={<RegisterPage onRegister={handleRegister}/>}/>
             <Route path="/dashboard" element={<Dashboard />}/>
+
+            {/* for every unknown path: */}
+            <Route path="/*" element={<NotFoundPageWidget />}/>
         </Routes>
     );
 }
