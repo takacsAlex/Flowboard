@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.gettingStarted {
+    max-width: 65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signIn {
+    align-self: flex-start;
+}

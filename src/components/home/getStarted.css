@@ -1,0 +1,39 @@
+.get_started {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    text-indent: 40px;
+}
+.get_started h1 {
+    font-size: 52pt;
+    font-weight: 800;
+}
+.get_started h2 {
+    font-size: 18pt;
+    color: rgba(255, 255, 255, 0.809);
+    text-align: justify;
+}
+
+#get_started_bts { 
+    margin: 15px;
+    text-indent: 0px;
+}
+#get_started_bt {
+    min-width: 120px;
+    font-size: 22pt;
+    font-weight: 700;
+    margin-left: 40px;
+}
+#read_more_bt {
+    color: rgba(255, 255, 255, 0.809);
+    min-width: 120px;
+    font-size: 20pt;
+    font-weight: 500;
+    border-color: rgba(201, 199, 199, 0.809);
+}
+#read_more_bt:hover {
+    background-color: rgba(201, 199, 199, 0.809);
+    color: black;
+}
