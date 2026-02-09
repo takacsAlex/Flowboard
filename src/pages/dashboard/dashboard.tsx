@@ -1,8 +1,11 @@
+import ProfileComponent from "../../components/dashboard/profile";
+import "./dashboard.css";
+
 const Dashboard = () => {
     return(
-        <div className="container">
-            <h1>Dashboard is under construction!</h1>
-        </div>
+        <>
+            <ProfileComponent />
+        </>
     );
 }
 
