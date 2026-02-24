@@ -5,8 +5,12 @@ import "./dashboard.css";
 const Dashboard = () => {
     return(
         <>
-            <ProfileComponent />
-            <ProjectSelecter />
+            <div className="row">
+                <div className="col"><ProfileComponent /></div>
+            </div>
+            <div className="row">
+                <div className="col"><ProjectSelecter /></div>
+            </div>
         </>
     );
 }

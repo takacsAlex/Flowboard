@@ -7,7 +7,6 @@ select {
   background: none;
   border: none;
   padding: 10px;
-  transition: 0.4s;
   font-size: 20pt;
   font-weight: 700;
 }
@@ -20,11 +19,11 @@ select:focus {
 
 select::picker-icon {
   color: #ffffffce;
-  transition: 0.4s rotate;
+  transition: rotate;
 }
 
 select:open::picker-icon {
-  rotate: 180deg;
+  rotate: 0s 180deg;
 }
 
 ::picker(select) {
@@ -34,12 +33,11 @@ select:open::picker-icon {
 option {
   display: flex;
   justify-content: flex-start;
-  text-align: center;
+  align-items: center;
   border: 2px solid #dddddd;
   font-weight: 500;
   background: none;
-  padding: 5px;
-  transition: 0.4s;
+  padding: 10px;
 }
 
 option:first-of-type {
