@@ -1,61 +1,69 @@
-select,
-::picker(select) {
-  appearance: base-select;
+.select-box {
+  display: flex;
+  min-width: max-content;
+  flex-direction: column;
+}
+.select-box .options-container {
+  background: none;
+  color: #f5f6fa;
+  font-size: 16pt;
+  font-weight: 500;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+  border-radius: 8px;
+  overflow: hidden;
+  order: 1;
 }
 
-select {
+.selected {
   background: none;
-  border: none;
-  padding: 10px;
-  font-size: 20pt;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #f5f6fa;
+  position: relative;
+  font-size: 24pt;
   font-weight: 700;
+  order: 0;
+}
+.selected:hover {
+  background-color: rgba(255, 255, 255, 0.065);
+}
+.selected::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  right: 10px;
+  top: 5px;
+  transition: all 0.4s;
 }
 
-select:hover,
-select:focus {
-  background: none;
+.select-box .options-container.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+.select-box .options-container::-webkit-scrollbar {
+  width: 8px;
+  background: rgba(255, 255, 255, 0.065);
+  border-radius: 0 8px 8px 0;
+}
+.select-box .options-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.065);
+  border-radius: 0 8px 8px 0;
+}
+.select-box .option,
+.selected {
+  padding: 12px 24px;
   cursor: pointer;
 }
-
-select::picker-icon {
-  color: #ffffffce;
-  transition: rotate;
+.select-box .option:hover {
+  background: rgba(255, 255, 255, 0.065);
 }
-
-select:open::picker-icon {
-  rotate: 0s 180deg;
+.select-box label {
+  cursor: pointer;
 }
-
-::picker(select) {
-  border: none;
-}
-
-option {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border: 2px solid #dddddd;
-  font-weight: 500;
-  background: none;
-  padding: 10px;
-}
-
-option:first-of-type {
-  border-radius: 8px 8px 0 0;
-}
-
-option:last-of-type {
-  border-radius: 0 0 8px 8px;
-}
-
-::picker(select) {
-  border-radius: 8px;
-}
-
-option:not(option:last-of-type) {
-  border-bottom: none;
-}
-
-option:hover {
-    cursor: pointer;
+.select-box .option .radio {
+  display: none;
 }
