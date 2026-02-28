@@ -18,3 +18,10 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.projectSelecterModule {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 100px;
+}
