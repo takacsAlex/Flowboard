@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './projectSelecter.css'
 
 const ProjectSelecter = () => {
-
     const [isOpen, setIsOpen] = useState(false);
     const [selected, setSelected] = useState("Select your project:");
     const options = [
@@ -11,7 +10,7 @@ const ProjectSelecter = () => {
         "Project2",
         "Project3"
     ];
-
+    
     const handleSelect = (option) => {
         setSelected(option + ":");
         setIsOpen(false);
