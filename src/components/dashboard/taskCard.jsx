@@ -1,6 +1,6 @@
 const TaskCard = ({task}) => {
     return(
-        <div>
+        <div className="task_card">
             <h1>{task.title}</h1>
             <p>{task.description}</p>
         </div>

@@ -1,6 +1,8 @@
 import TaskColumn from "./taskColumn";
+import TaskCard from "./taskCard";
 import { useState } from "react";
 import { useDraggable } from "@dnd-kit/react";
+import './taskBoard.css';
 
 const TaskBoard = () => {
     const columns = [
@@ -36,9 +38,11 @@ const TaskBoard = () => {
 
     return(
         <div ref={ref}>
-            {columns.map(column => {
-                <TaskColumn column={column} tasks={tasks}/>
+            <div>
+            {columns.map((column) => {
+                return <TaskColumn column={column} tasks={tasks}/>
             })}
+            </div>
         </div>
     );
 }

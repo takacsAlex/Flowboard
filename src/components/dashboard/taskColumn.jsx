@@ -4,9 +4,11 @@ const TaskColumn = ({column, tasks}) => {
     return(
         <div>
             <h1>{column.title}</h1>
+            <div>
             {tasks.map(task => {
-                <TaskCard task={task} />
+                return <TaskCard task={task} />
             })}
+            </div>
         </div>
     );
 }
