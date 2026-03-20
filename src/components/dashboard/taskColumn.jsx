@@ -2,11 +2,13 @@ import TaskCard from "./taskCard";
 
 const TaskColumn = ({column, tasks}) => {
     return(
-        <div>
+        <div className="task_column">
             <h1>{column.title}</h1>
             <div>
             {tasks.map(task => {
-                return <TaskCard task={task} />
+                if (task.status == column.id) {
+                    return <TaskCard task={task} />
+                }
             })}
             </div>
         </div>

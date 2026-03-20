@@ -33,14 +33,13 @@ const TaskBoard = () => {
     ]
 
     const [task, setTasks] = useState(tasks);
-    const {ref} = useDraggable({id: "draggable"});
 
 
     return(
-        <div ref={ref}>
+        <div>
             <div>
             {columns.map((column) => {
-                return <TaskColumn column={column} tasks={tasks}/>
+                return <TaskColumn column={column} tasks={tasks} />
             })}
             </div>
         </div>
