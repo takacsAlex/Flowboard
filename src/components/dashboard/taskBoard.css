@@ -3,4 +3,6 @@
 }
 .task_column {
     background-color: rgba(0, 0, 0, 0.416);
+    min-width: 100;
+    min-height: 200px;
 }

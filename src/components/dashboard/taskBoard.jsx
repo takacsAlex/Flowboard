@@ -2,6 +2,8 @@ import TaskColumn from "./taskColumn";
 import TaskCard from "./taskCard";
 import { useState } from "react";
 import { useDraggable } from "@dnd-kit/react";
+import { DragDropProvider } from "@dnd-kit/react";
+import { DndContext } from "@dnd-kit/core";
 import './taskBoard.css';
 
 const TaskBoard = () => {
@@ -32,17 +34,39 @@ const TaskBoard = () => {
         }
     ]
 
-    const [task, setTasks] = useState(tasks);
+    const [task, setTask] = useState();
+
+    // const targets = []
+    // tasks.forEach((task) => {
+    //     targets.push(task);
+    // })
+    // const [target, setTarget] = useState();
+
+    const draggable = (
+        tasks.map((task) => {
+            return <TaskCard task={task} />
+        })
+    );
 
 
     return(
         <div>
-            <div>
-            {columns.map((column) => {
-                return <TaskColumn column={column} tasks={tasks} />
-            })}
-            </div>
-        </div>
+            <DragDropProvider onDragEnd={(event) => {
+                if(event.canceled) return;
+                setTask(event.operation.target?.id);
+            }}
+            >
+                
+                <div>
+                {!task ? draggable : null}
+                {columns.map((column) => {
+                    return <TaskColumn key={column.id} column={column}>
+                        {task == column.id? draggable : `Droppable ${column.id}`}
+                    </TaskColumn>
+                })}
+                </div>
+            </DragDropProvider>
+        </div>  
     );
 }
 
