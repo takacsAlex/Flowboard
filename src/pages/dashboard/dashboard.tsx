@@ -1,6 +1,6 @@
 import ProfileComponent from "../../components/dashboard/profile";
 import ProjectSelecter from "../../components/dashboard/projectSelecter";
-import TaskBoard from "../../components/dashboard/taskBoard";
+import TaskBoard from "../../components/dashboard/taskBoard.tsx";
 import "./dashboard.css";
 
 const Dashboard = () => {
