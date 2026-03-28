@@ -23,5 +23,9 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    margin: 100px;
+    margin: 80px;
+}
+
+.task-board {
+    margin-left: 20%;
 }

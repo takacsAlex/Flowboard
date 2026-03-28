@@ -1,6 +1,6 @@
 import TaskCard from "./taskCard.tsx";
-import {useDroppable} from '@dnd-kit/core';
-import { TaskProps} from "./taskCard.tsx";
+import { useDroppable } from '@dnd-kit/core';
+import { TaskProps } from "./taskCard.tsx";
 
 type ColumnProps = {
     column: any;
@@ -13,11 +13,11 @@ const TaskColumn = ({column, tasks}: ColumnProps) => {
     });
 
     return(
-        <div className="task_column" ref={setNodeRef}>
-            <h1>{column.title}</h1>
+        <div className="task-column" ref={setNodeRef}>
+            <h1 className="task-column-title">{column.title}</h1>
             <div>
             {tasks.map((task) => {
-                if (task.status == column.id) {
+                if (task.status === column.id) {
                     return <TaskCard {...task} key={task.id}/>
                 }
             })}

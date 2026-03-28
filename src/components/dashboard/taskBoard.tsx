@@ -17,19 +17,22 @@ const TaskBoard = () => {
             id: "1",
             title: "Task1",
             description: "This is task one",
-            status: "to_do"
+            status: "to_do",
+            difficulty: "red"
         },
         {
             id: "2",
             title: "Task2",
             description: "This is task two",
-            status: "to_do"
+            status: "to_do",
+            difficulty: "green"
         },
         {
             id: "3",
             title: "Task3",
             description: "This is task three",
-            status: "in_progress"
+            status: "in_progress",
+            difficulty: "orange"
         }
     ];
 
@@ -37,12 +40,10 @@ const TaskBoard = () => {
 
     function handleDragEnd(event: DragEndEvent) {
         const {active, over} = event;
-
         if(!over) return;
 
         const taskId = active.id as string;
         const newStatus = over.id as TaskProps["status"];
-
         setTasks(() => tasks.map((task) => task.id === taskId ? {
             ...task,
             status: newStatus
@@ -50,7 +51,7 @@ const TaskBoard = () => {
     }
 
     return(
-        <div>
+        <div className="task-board">
             <DndContext onDragEnd={handleDragEnd}>
                 {columns.map((column) => {
                     return <TaskColumn key={column.id} column={column} tasks={tasks.filter((task) => task.status === column.id)} />

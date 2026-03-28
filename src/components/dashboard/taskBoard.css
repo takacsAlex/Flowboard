@@ -1,8 +1,53 @@
-.task_card {
-    color: white;
+.task-board {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
 }
-.task_column {
-    background-color: rgba(0, 0, 0, 0.416);
-    min-width: 100;
+
+.task-column {
+    background-color: rgba(255, 255, 255, 0.016);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
     min-height: 200px;
+    padding: 20px;
+}   
+.task-column-title {
+    text-align: center;
+    font-size: 25pt;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.task-card {
+    background-color:  rgba(255, 255, 255, 0.034);
+    border-radius: 10px;
+    margin: 5px;
+    height: 7vh;
+    display: flex;
+    gap: 0.5;
+    flex-direction: column;
+    justify-content: center;
+}
+.task-card-title {
+    font-size: 15pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+.task-card-description {
+    font-size: 10pt;
+    margin: 0px;
+}
+
+.task-card-difficulty {
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;   
 }

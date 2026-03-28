@@ -5,6 +5,7 @@ export type TaskProps = {
     title: string;
     description: string;
     status: string;
+    difficulty: string;
 }
 
 const TaskCard = (task: TaskProps) => {
@@ -14,9 +15,11 @@ const TaskCard = (task: TaskProps) => {
 
     const style = transform? {transform: `translate(${transform.x}px, ${transform.y}px)`} : undefined
     return(
-        <div className="task_card" ref={setNodeRef} {...listeners} {...attributes} style={style}>
-            <h1>{task.title}</h1>
-            <p>{task.description}</p>
+        <div className="task-card" ref={setNodeRef} {...listeners} {...attributes} style={style}>
+            <h1 className="task-card-title">{task.title}
+                <span className="task-card-difficulty" style={{backgroundColor: task.difficulty}}></span>
+            </h1>
+            <p className="task-card-description">{task.description}</p>
         </div>
     );
 }
