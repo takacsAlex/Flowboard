@@ -8,7 +8,7 @@ export type TaskProps = {
     difficulty: string;
 }
 
-const TaskCard = (task: TaskProps) => {
+export default function TaskCard(task: TaskProps) {
     const {attributes, listeners, setNodeRef, transform} = useDraggable({
         id: task.id,
     })
@@ -23,5 +23,3 @@ const TaskCard = (task: TaskProps) => {
         </div>
     );
 }
-
-export default TaskCard;  

@@ -5,7 +5,7 @@ import { TaskProps } from "./taskCard.tsx";
 import TaskColumn from "./taskColumn.tsx";
 import './taskBoard.css';
 
-const TaskBoard = () => {
+export default function TaskBoard() {
     const columns = [
         {id: "to_do", title: "To Do"},
         {id: "in_progress", title: "In Progress"},
@@ -60,5 +60,3 @@ const TaskBoard = () => {
         </div>  
     );
 }
-
-export default TaskBoard;

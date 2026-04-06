@@ -1,7 +1,7 @@
-import { ProfileComponent } from "../../components/dashboard/profile";
+import ProfileComponent from "../../components/dashboard/profile";
 import ProjectSelecter from "../../components/dashboard/projectSelecter";
 import TaskBoard from "../../components/dashboard/taskBoard.tsx";
-import { Menu } from "../../components/shared/menu.tsx";
+import Menu  from "../../components/shared/menu.tsx";
 import "./dashboard.css";
 
 const Dashboard = () => {
@@ -20,5 +20,4 @@ const Dashboard = () => {
         </>
     );
 }
-
 export default Dashboard;

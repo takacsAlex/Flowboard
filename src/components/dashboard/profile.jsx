@@ -2,7 +2,7 @@ import "./profile.css";
 import { DropDownProfile } from "./dropDownProfile.tsx";
 import { useState } from "react";
 
-export function ProfileComponent() {
+export default function ProfileComponent() {
     const [openProfile, setOpenProfile] = useState(false);
     const [background, setBackground] = useState({})
 

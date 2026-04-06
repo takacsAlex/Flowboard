@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import "./menu.css";
 
-export function Menu() {
+export default function Menu() {
     const [rotate, setRotate] = useState("0");
 
     return (

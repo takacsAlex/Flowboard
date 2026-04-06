@@ -1,13 +1,12 @@
-import TaskCard from "./taskCard.tsx";
+import TaskCard, { TaskProps } from "./taskCard.tsx";
 import { useDroppable } from '@dnd-kit/core';
-import { TaskProps } from "./taskCard.tsx";
 
 type ColumnProps = {
     column: any;
     tasks: TaskProps[];
 }
 
-const TaskColumn = ({column, tasks}: ColumnProps) => {
+export default function TaskColumn({column, tasks}: ColumnProps) {
     const {setNodeRef} = useDroppable({
         id: column.id,
     });
@@ -25,5 +24,3 @@ const TaskColumn = ({column, tasks}: ColumnProps) => {
         </div>
     );
 }
-
-export default TaskColumn;

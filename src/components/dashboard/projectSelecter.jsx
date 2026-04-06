@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './projectSelecter.css'
 
-const ProjectSelecter = () => {
+export default function ProjectSelecter() {
     const [isOpen, setIsOpen] = useState(false);
     const [selected, setSelected] = useState("Select your project:");
     const options = [
@@ -37,5 +37,3 @@ const ProjectSelecter = () => {
         </div>
     );
 }
-
-export default ProjectSelecter;
