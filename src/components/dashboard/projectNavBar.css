@@ -1,0 +1,19 @@
+.project-nav-bar {
+    position: absolute;
+    top: 6.67rem;
+    right: 30rem;
+    font-size: 1.67rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+}
+.project-nav-bar p {
+    margin: 10px;
+}
+.project-nav-bar :hover {
+    cursor: pointer;
+}
+
+#nav-bar-chosen {
+    font-weight: 700;
+}
