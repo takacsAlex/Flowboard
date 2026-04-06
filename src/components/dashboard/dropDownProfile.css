@@ -1,0 +1,21 @@
+.drop-down-profile {
+    color: rgba(255, 255, 255, 0.67);
+    font-size: 16pt;
+    font-weight: 500;
+    text-align: right;
+    padding: 2px;
+}
+.drop-down-profile ul {
+    list-style-type: none;
+}
+.drop-down-profile li:hover {
+    color: white;
+}
+
+#log-out {
+    color: rgba(129, 0, 0, 0.9);
+    margin-top: 5px;
+}
+#log-out:hover {
+    color: rgb(192, 1, 1);
+}

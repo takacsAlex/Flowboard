@@ -6,19 +6,6 @@ body {
     justify-content: center;
 }
 
-.profileComponent {
-    margin: 15px;
-    padding: 2px;
-    padding-left: 20px;
-    padding-right: 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .projectSelecterModule {
     position: absolute;
     left: 0;

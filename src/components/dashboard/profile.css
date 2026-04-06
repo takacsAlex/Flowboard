@@ -1,4 +1,24 @@
-#profilePicture {
+.profile-component {
+    padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.4s;
+    background: none;
+    border-radius: 30px;
+}
+.profile-component:hover {
+    background-color: rgba(30, 30, 30, 0.6);
+    cursor: pointer;
+}
+
+#profile-picture {
     margin: 10px;
     height: 3rem;
     border-radius: 100%;
@@ -7,10 +27,4 @@
     margin-right: 5px;
     font-size: 20pt;
     font-weight: 700;
-}
-.profileComponent:hover {
-    background-color: rgb(30, 30, 30);
-    border-radius: 30px;
-    cursor: pointer;
-    transition: 0.2s;
 }
