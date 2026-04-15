@@ -2,14 +2,15 @@ import { useState } from 'react';
 import './projectSelecter.css'
 
 export default function ProjectSelecter() {
-    const [isOpen, setIsOpen] = useState(false);
-    const [selected, setSelected] = useState("Select your project:");
     const options = [
         "Main",
         "Project1",
         "Project2",
         "Project3"
     ];
+    
+    const [isOpen, setIsOpen] = useState(false);
+    const [selected, setSelected] = useState(options[0]);
     
     const handleSelect = (option) => {
         setSelected(option + ":");
